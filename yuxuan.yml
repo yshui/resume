@@ -1,0 +1,133 @@
+name: Yuxuan Shui
+resume_url: https://cv.yshui.dev
+contacts:
+  - type: github
+    value: yshui
+  - type: email
+    value: yshuiv7@gmail.com
+  - type: blog
+    value: https://explain.yshui.dev
+educations:
+  - institution: Stony Brook University
+    major: Computer Science
+    degree: MS
+    duration: 2014-09~2017-06
+    location: New York, United States
+    gpa: 3.98
+  - institution: Fudan University
+    major: Computer Science
+    location: Shanghai, China
+    degree: BS
+    duration: 2010-09~2014-06
+experiences:
+  - company: Hadean Supercomputing Ltd
+    position: Software Engineer
+    duration: 2017-09~2023-05
+    location: London, England, United Kingdom
+    description: Hadean[^hadean] enables our clients to easily build massively distributed applications. I research, design and implement critical components of our platform. We mainly using Rust and C++.
+  - company: Google, LLC
+    position: Software Engineer Intern
+    duration: 2017-05~2017-08
+    location: Mountain View, California, United States
+    description: Laid the groundwork for a distributed profiling and performance monitoring system, which enables on-the-fly profiling of tasks running on the Google's cluster manager[^borg].
+  - company: SanDisk
+    position: Software Engineer Intern
+    duration: 2015-05~2015-08
+    location: Milpitas, California, United States
+    description: Developed a persistent memory manager for byte-addressable non-volatile memory.
+  - company: Microsoft Research Asia
+    position: Software Engineer Intern
+    duration: 2014-01~2014-03
+    location: Beijing, China
+    description: Worked on adding persistent storage to an in-memory distributed graph database, as part of the Trinity team[^trinity].
+  - company: eBay Inc.
+    position: Software Engineer Intern
+    duration: 2013-07~2013-11
+    location: Shanghai, China
+    description: Improved the performance of the in house cloud platform.
+
+skills:
+  - category: Programming
+    description: "Some of the languages I use, starting from the ones I am best at: C, Rust, D, C++, Python, TypeScript, JavaScript, Lua, Bash, Perl, SQL, VHDL, Verilog, TLA+."
+  - category: Linux
+    description: Has been my main operating system for more than 15 years.
+  - category: Operating systems fundamentals
+    description: Knowledge of operating system design and implementation. Experiences of designing and building microkernel based operating systems[^sados].
+  - category: Processor architecture
+    description: Knowledge of Verilog and VHDL. Experiences of designing and building processors and ISAs.
+  - category: Compiler
+    description: Knowledge of writing an optimizing compiler. Experiences of designing and implementing compiler[^protoplasm] frontends and backends.
+  - category: Debugging
+    description: Able to troubleshoot complex problems with a variety of tools.
+  - category: Open source
+    description: Well accustomed to the open source community. Experiences of contributing to and managing open source projects.
+  - category: Performance analysis
+    description: Able to analyze, diagnose and fix performance problems with a variety of tools.
+  - category: Model checking and formal verification
+    description: Knowledge of basic model checking and verification theory and techniques. Experiences of working with TLA+.
+
+projects:
+  - from: github
+    repos:
+      - openzfs/zfs
+      - dlang/dmd
+      - torvalds/linux
+      - ValveSoftware/wine
+      - systemd/systemd
+      - Mesa3D/mesa
+      - yshui/picom
+      - yshui/deai
+      - yshui/runa
+      - yshui/job-security
+  - import_mode: whitelist
+  - name: picom
+    description: A lightweight X11 compositor.
+  - name: runa
+    description: Wayland compositor toolbox for Rust.
+  - name: deai
+    description: DEsktop Automation Infrastructure. Make desktop components scriptable.
+  - name: job-security
+    description: Universal terminal job control.
+  - name: wine
+    contributions: Added support for network video playback to mfplat.
+  - name: zfs
+    contributions: Ported feature[^l2arc] from illumos. Fixed compatibility issues caused by Linux kernel changes.
+  - name: dmd
+    contributions: Fixed mis-compilation,[^dmdbug1] parser bugs;[^dmdbug2] Improved the quality of diagnostics messages.[^dmdbug3]
+    description: "The D Programming Language compiler"
+  - name: systemd
+    contributions: Bug fixes.
+  - name: linux
+    contributions: "Small bug fixes."
+  - name: mesa
+    contributions: Proposed and implemented EGL_EXT_platform_xcb.
+publications:
+  - text: "Yuxuan Shui. <b>EGL_EXT_platform_xcb.</b> URL:<a href=\"https://www.khronos.org/registry/EGL/extensions/EXT/EGL_EXT_platform_xcb.txt\">https://www.khronos.org/registry/EGL/extensions/EXT/EGL_EXT_platform_xcb.txt</a>"
+    year: 2020
+  - doi: 10.1109/LCA.2019.2911287
+  - doi: 10.1142/S0219720015420020
+references:
+  hadean:
+    url: https://hadean.com
+  borg:
+    doi: 10.1145/2741948.2741964
+  trinity:
+    url: https://www.microsoft.com/en-us/research/project/trinity/
+  picom:
+    url: https://github.com/yshui/picom
+  sados:
+    url: https://github.com/yshui/SadOS
+  protoplasm:
+    url: https://github.com/yshui/protoplasm
+  deai:
+    url: https://github.com/yshui/deai
+  palfix:
+    url: https://github.com/GPUOpen-Drivers/pal/pull/29
+  l2arc:
+    url: https://github.com/openzfs/zfs/pull/9582
+  dmdbug1:
+    url: https://issues.dlang.org/show_bug.cgi?id=17943
+  dmdbug2:
+    url: https://issues.dlang.org/show_bug.cgi?id=19081
+  dmdbug3:
+    url: https://github.com/dlang/dmd/pull/6140
