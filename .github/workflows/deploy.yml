@@ -33,7 +33,7 @@ jobs:
         env:
           CARGO_HOME: ${{ github.workspace }}/cargo_home
       - name: Build
-        run: mkdir dist && RUST_BACKTRACE=1 ./briefly/target/release/briefly yuxuan.yml > dist/index.html && cp -v briefly/*.css dist/
+        run: mkdir dist && RUST_BACKTRACE=1 ./briefly/target/release/briefly yuxuan.yml > dist/index.html && cp -rv briefly/*.css briefly/icons dist/
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload GitHub Pages artifact
