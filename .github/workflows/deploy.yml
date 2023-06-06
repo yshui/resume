@@ -15,10 +15,15 @@ jobs:
         uses: actions/checkout@v3
       - name: Install rust
         uses: dtolnay/rust-toolchain@stable
+      - name: Checkout briefly
+        uses: actions/checkout@v3
+        with:
+          repository: yshui/briefly
+          path: briefly
       - name: Install briefly
-        run: cargo install --git https://github.com/yshui/briefly
+        run: cargo install --path briefly
       - name: Build
-        run: mkdir dist && briefly yuxuan.yml > dist/index.html
+        run: mkdir dist && briefly yuxuan.yml > dist/index.html && cp -v briefly/*.css dist/
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload GitHub Pages artifact
